@@ -1,0 +1,106 @@
+.box {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 3px solid darkturquoise;
+  position: relative;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: turquoise;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid gray;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  background-color: turquoise;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid darkturquoise;
+  text-align: center;
+  color: white;
+  padding-top: 18px;
+  font-size: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 200px;
+}
+
+.up {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.left {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.down {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.right {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.block {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid black;
+  position: absolute;
+}
+
+.b1 {
+  top: 200px;
+  left: 50px;
+}
+
+.b2 {
+  top: 100px;
+  left: 150px;
+}
+/*# sourceMappingURL=main.css.map */
