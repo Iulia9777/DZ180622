@@ -36,7 +36,7 @@ document.addEventListener('click', function(ev) {
     if (ev.target.className=='left key' && toleft>0) {
         if (toleft > 50 && toleft <= 100 && totop > 200 && totop < 250) {
         } else {
-            if (tolef t> 100 && toleft <= 200 && totop > 100 && totop < 200) {
+            if (toleft > 100 && toleft <= 200 && totop > 100 && totop < 200) {
             } else {
                 toleft = toleft-10;
                 document.getElementsByClassName('square')[0].style.left = toleft+'px';
