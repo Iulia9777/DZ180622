@@ -1,4 +1,4 @@
-﻿.box {
+.box {
     margin: 0 auto;
     margin-top: 20px;
     width: 300px;
@@ -6,32 +6,33 @@
     background-color: white;
     border: 3px solid darkturquoise;
     position: relative;
+    .square {
+        width: 50px;
+        height: 50px;
+        background-color: turquoise;
+        box-sizing: border-box;
+        border: 2px solid gray;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .block {
+        width: 50px;
+        height: 50px;
+        background-color: lightgray;
+        box-sizing: border-box;
+        border: 2px solid black;
+        position: absolute;
+    }
+    .b1 {
+        top: 200px;
+        left: 50px;
+    }
+    .b2 {
+        top: 100px;
+        left: 150px;
+    }
 }
-
-.square {
-    width: 50px;
-    height: 50px;
-    background-color: turquoise;
-    box-sizing: border-box;
-    border: 2px solid gray;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.key {
-    width: 60px;
-    height: 60px;
-    background-color: turquoise;
-    box-sizing: border-box;
-    border: 3px solid darkturquoise;
-    text-align: center;
-    color: white;
-    padding-top: 18px;
-    font-size: 16px;
-    user-select: none;
-}
-
 .wrapper {
     margin: 0 auto;
     margin-top: 10px;
@@ -39,51 +40,60 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     width: 200px;
+    .key {
+        width: 60px;
+        height: 60px;
+        background-color: turquoise;
+        box-sizing: border-box;
+        border: 3px solid darkturquoise;
+        text-align: center;
+        color: white;
+        padding-top: 18px;
+        font-size: 16px;
+        user-select: none;
+    }
+    .up {
+        background-image: url(/svg/arrow-up-solid.svg);
+        background-size: 13px, auto, contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .down {
+        background-image: url(/svg/arrow-down-solid.svg);
+        background-size: 13px, auto, contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .left {
+        background-image: url(/svg/arrow-left-solid.svg);
+        background-size: 13px, auto, contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .right {
+        background-image: url(/svg/arrow-right-solid.svg);
+        background-size: 13px, auto, contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 }
 
-.up {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
 
-.left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
-.down {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
-.right {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.block {
-    width: 50px;
-    height: 50px;
-    background-color: lightgray;
-    box-sizing: border-box;
-    border: 2px solid black;
-    position: absolute;
-}
-
-.b1 {
-    top: 200px;
-    left: 50px;
-}
-
-.b2 {
-    top: 100px;
-    left: 150px;
-}
