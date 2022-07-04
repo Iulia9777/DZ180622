@@ -62,7 +62,7 @@
 }
 
 .wrapper .up {
-  background-image: url(/svg/arrow-up-solid.svg);
+  background-image: url(./svg/arrow-up-solid.svg);
   background-size: 13px, auto, contain;
   background-repeat: no-repeat;
   background-position: center;
