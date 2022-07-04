@@ -8,33 +8,34 @@
   position: relative;
 }
 
-.square {
+.box .square {
   width: 50px;
   height: 50px;
   background-color: turquoise;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 2px solid gray;
   position: absolute;
   top: 0px;
   left: 0px;
 }
 
-.key {
-  width: 60px;
-  height: 60px;
-  background-color: turquoise;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 3px solid darkturquoise;
-  text-align: center;
-  color: white;
-  padding-top: 18px;
-  font-size: 16px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.box .block {
+  width: 50px;
+  height: 50px;
+  background-color: lightgray;
+  box-sizing: border-box;
+  border: 2px solid black;
+  position: absolute;
+}
+
+.box .b1 {
+  top: 200px;
+  left: 50px;
+}
+
+.box .b2 {
+  top: 100px;
+  left: 150px;
 }
 
 .wrapper {
@@ -42,65 +43,65 @@
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   width: 200px;
 }
 
-.up {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+.wrapper .key {
+  width: 60px;
+  height: 60px;
+  background-color: turquoise;
+  box-sizing: border-box;
+  border: 3px solid darkturquoise;
+  text-align: center;
+  color: white;
+  padding-top: 18px;
+  font-size: 16px;
+  user-select: none;
+}
+
+.wrapper .up {
+  background-image: url(/svg/arrow-up-solid.svg);
+  background-size: 13px, auto, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column-start: 2;
   grid-column-end: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.left {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-.down {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+.wrapper .down {
+  background-image: url(/svg/arrow-down-solid.svg);
+  background-size: 13px, auto, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column-start: 2;
   grid-column-end: 3;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.right {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+.wrapper .left {
+  background-image: url(/svg/arrow-left-solid.svg);
+  background-size: 13px, auto, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.wrapper .right {
+  background-image: url(/svg/arrow-right-solid.svg);
+  background-size: 13px, auto, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column-start: 3;
   grid-column-end: 4;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
-}
-
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: lightgray;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid black;
-  position: absolute;
-}
-
-.b1 {
-  top: 200px;
-  left: 50px;
-}
-
-.b2 {
-  top: 100px;
-  left: 150px;
 }
 /*# sourceMappingURL=main.css.map */
