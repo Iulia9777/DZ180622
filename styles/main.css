@@ -73,7 +73,7 @@
 }
 
 .wrapper .down {
-  background-image: url(/svg/arrow-down-solid.svg);
+  background-image: url(../svg/arrow-down-solid.svg);
   background-size: 13px, auto, contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@
 }
 
 .wrapper .left {
-  background-image: url(/svg/arrow-left-solid.svg);
+  background-image: url(../svg/arrow-left-solid.svg);
   background-size: 13px, auto, contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -95,7 +95,7 @@
 }
 
 .wrapper .right {
-  background-image: url(/svg/arrow-right-solid.svg);
+  background-image: url(../svg/arrow-right-solid.svg);
   background-size: 13px, auto, contain;
   background-repeat: no-repeat;
   background-position: center;
